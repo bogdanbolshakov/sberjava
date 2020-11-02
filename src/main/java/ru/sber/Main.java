@@ -2,7 +2,7 @@ package ru.sber;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(sum((byte) 10, (short) 90));
+        System.out.println(sum((byte) 10, (short) 80));
         System.out.println(sum((byte) 120, (short) 30));
         System.out.println(composition(25, 25L));
         System.out.println(composition(1, 1000000000000L));
