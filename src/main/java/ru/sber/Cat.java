@@ -1,17 +1,11 @@
 package ru.sber;
 
-/**
- *
- */
 public class Cat extends Animal {
     private String color;
 
-    @Override
-    public String toString() {
-        return "Cat{" +
-                "age='" + getAge() + '\'' + ", " +
-                "color='" + color + '\'' +
-                '}';
+    public Cat(int age, String color) {
+        super(age);
+        this.color = color;
     }
 
     public String getColor() {
@@ -19,16 +13,6 @@ public class Cat extends Animal {
     }
 
     public void setColor(String color) {
-        this.color = color;
-    }
-
-    public Cat(String color) {
-        super();
-        this.color = color;
-    }
-
-    public Cat(int age, String color) {
-        super(age);
         this.color = color;
     }
 
@@ -50,5 +34,13 @@ public class Cat extends Animal {
 
     public void canSwim() {
         System.out.println("Cats can't swim.");
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "age='" + getAge() + '\'' + ", " +
+                "color='" + color + '\'' +
+                '}';
     }
 }

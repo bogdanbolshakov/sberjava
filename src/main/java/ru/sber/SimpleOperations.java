@@ -4,23 +4,23 @@ public class SimpleOperations {
     /**
      * Возвращает сумму двух чисел (byte + short)
      *
-     * @param _byte  byte
-     * @param _short short
+     * @param b byte
+     * @param s short
      * @return byte
      */
-    private static byte sum(byte _byte, short _short) {
-        return (byte) (_byte + _short);
+    private static byte sum(byte b, short s) {
+        return (byte) (b + s);
     }
 
     /**
      * Возвращает произведение двух чисел (int * long)
      *
-     * @param _int  int
-     * @param _long long
+     * @param i  int
+     * @param l long
      * @return int
      */
-    private static int composition(int _int, long _long) {
-        return (int) (_int * _long);
+    private static int composition(int i, long l) {
+        return (int) (i * l);
     }
 
     /**

@@ -3,12 +3,9 @@ package ru.sber;
 public class Dog extends Animal {
     String breed;
 
-    @Override
-    public String toString() {
-        return "Dog{" +
-                "age='" + getAge() + '\'' + ", " +
-                "breed='" + breed + '\'' +
-                '}';
+    public Dog(int age, String breed) {
+        super(age);
+        this.breed = breed;
     }
 
     public String getBreed() {
@@ -16,15 +13,6 @@ public class Dog extends Animal {
     }
 
     public void setBreed(String breed) {
-        this.breed = breed;
-    }
-
-    public Dog(String breed) {
-        this.breed = breed;
-    }
-
-    public Dog(int age, String breed) {
-        super(age);
         this.breed = breed;
     }
 
@@ -46,5 +34,13 @@ public class Dog extends Animal {
 
     public void canSwim() {
         System.out.println("The dog likes to swim.");
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "age='" + getAge() + '\'' + ", " +
+                "breed='" + breed + '\'' +
+                '}';
     }
 }
